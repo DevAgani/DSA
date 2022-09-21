@@ -1,5 +1,5 @@
 import XCTest
-@testable import DSA
+import DSA
 
 final class DSATests: XCTestCase {
     func testExample() throws {
