@@ -19,17 +19,26 @@ let package = Package(
     targets: [
         .target(
             name: "DSA",
-            dependencies: []),
+            dependencies: [
+              "LeetCode",
+              "Codility"
+            ]),
         .testTarget(
             name: "DSATests",
             dependencies: ["DSA"]),
         .target(name: "LeetCode",
-               path: "Sources/LeetCode"),
-        .testTarget(name: "LeetCodeTests",
-                   path: "Tests/LeetCode"),
+                path: "Sources/LeetCode"),
+        .testTarget(
+            name: "LeetCodeTests",
+            dependencies: ["LeetCode"],
+            path: "Tests/LeetCode"
+        ),
         .target(name: "Codility",
                path: "Sources/Codility"),
-        .testTarget(name: "CodilityTests",
-                   path: "Tests/Codility"),
+        .testTarget(
+            name: "CodilityTests",
+            dependencies: ["Codility"],
+            path: "Tests/Codility"
+        ),
     ]
 )
