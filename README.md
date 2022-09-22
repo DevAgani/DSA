@@ -7,4 +7,4 @@ These solutions have been grouped into targets pointing to the sites from where 
 
 # License
 
-DSA is released under the MIT license. See [LICENSE](https://github.com/omaralbeik/Stores/blob/main/LICENSE) for more information.
+DSA is released under the MIT license. See [LICENSE](https://github.com/DevAgani/DSA/blob/master/LICENSE) for more information.
