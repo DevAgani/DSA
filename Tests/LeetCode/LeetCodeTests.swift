@@ -19,4 +19,13 @@ class LeetCodeTests: XCTestCase {
         XCTAssertFalse(LeetCode.validAnagram("Punishments", "Nine thumps"))
         XCTAssertTrue(LeetCode.validAnagram("School master", "The classroom"))
     }
+    
+    func test_868_BinaryGap() {
+        XCTAssertEqual(LeetCode.binaryGap(6), 1)
+        XCTAssertEqual(LeetCode.binaryGap(600), 3)
+        XCTAssertEqual(LeetCode.binaryGap(1), 0)
+        XCTAssertEqual(LeetCode.binaryGap(9993), 5)
+        XCTAssertEqual(LeetCode.binaryGap(34), 4)
+        XCTAssertEqual(LeetCode.binaryGap(69889), 8)
+    }
 }
