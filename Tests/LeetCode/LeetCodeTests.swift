@@ -9,6 +9,12 @@ import XCTest
 import LeetCode
 
 class LeetCodeTests: XCTestCase {
+    func test_1_twoSum() {
+        XCTAssertEqual(LeetCode.twoSum([2,7,11,15], 9), [0,1])
+        XCTAssertEqual(LeetCode.twoSum([5,8,3,6], 14), [1,3])
+        XCTAssertEqual(LeetCode.twoSum([3,7,10,15], 22), [1,3])
+    }
+    
     func test_15_threeSum() {
         XCTAssertEqual(LeetCode.threeSum([-1,0,1,2,-1,-4]), [[-1,-1,2],[-1,0,1]])
         XCTAssertEqual(LeetCode.threeSum([0,1,1]), [])
