@@ -42,4 +42,17 @@ class LeetCodeTests: XCTestCase {
         XCTAssertEqual(LeetCode.binaryGap(34), 4)
         XCTAssertEqual(LeetCode.binaryGap(69889), 8)
     }
+    
+    func test_17_letterCombinations() {
+        XCTAssertEqual(LeetCode.letterCombinations("23"),
+                       ["ad","ae","af","bd","be","bf","cd","ce","cf"])
+        XCTAssertEqual(LeetCode.letterCombinations(""),
+                       [])
+        XCTAssertEqual(LeetCode.letterCombinations("1"),
+                       [])
+        XCTAssertEqual(LeetCode.letterCombinations("434"),
+                       ["gdg", "gdh", "gdi", "geg", "geh", "gei", "gfg", "gfh", "gfi", "hdg", "hdh", "hdi", "heg", "heh", "hei", "hfg", "hfh", "hfi", "idg", "idh", "idi", "ieg", "ieh", "iei", "ifg", "ifh", "ifi"])
+        XCTAssertEqual(LeetCode.letterCombinations("3847"),
+                       ["dtgp", "dtgq", "dtgr", "dtgs", "dthp", "dthq", "dthr", "dths", "dtip", "dtiq", "dtir", "dtis", "dugp", "dugq", "dugr", "dugs", "duhp", "duhq", "duhr", "duhs", "duip", "duiq", "duir", "duis", "dvgp", "dvgq", "dvgr", "dvgs", "dvhp", "dvhq", "dvhr", "dvhs", "dvip", "dviq", "dvir", "dvis", "etgp", "etgq", "etgr", "etgs", "ethp", "ethq", "ethr", "eths", "etip", "etiq", "etir", "etis", "eugp", "eugq", "eugr", "eugs", "euhp", "euhq", "euhr", "euhs", "euip", "euiq", "euir", "euis", "evgp", "evgq", "evgr", "evgs", "evhp", "evhq", "evhr", "evhs", "evip", "eviq", "evir", "evis", "ftgp", "ftgq", "ftgr", "ftgs", "fthp", "fthq", "fthr", "fths", "ftip", "ftiq", "ftir", "ftis", "fugp", "fugq", "fugr", "fugs", "fuhp", "fuhq", "fuhr", "fuhs", "fuip", "fuiq", "fuir", "fuis", "fvgp", "fvgq", "fvgr", "fvgs", "fvhp", "fvhq", "fvhr", "fvhs", "fvip", "fviq", "fvir", "fvis"])
+    }
 }
